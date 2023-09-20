@@ -8,7 +8,7 @@ import { fadeIn, opacity } from '@/utils/motion'
 
 const Explore = () => {
     return (
-        <div id='explore' className='max-w-7xl flex flex-col-reverse md:flex-row items-center p-10 justify-center mx-auto min-h-screen gap-10 md:gap-40'>
+        <div id='explore' className='snapper max-w-7xl flex flex-col-reverse md:flex-row items-center p-10 justify-center mx-auto min-h-screen gap-10 md:gap-40'>
             <motion.div
                 variants={opacity(0.2)}
                 initial="hidden"

@@ -6,6 +6,22 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { navVariants } from '@/utils/motion';
 import { AlignRight } from 'lucide-react';
+import { MobileNav } from './MobileNav';
+
+export const NavLinks = [
+    {
+        label: "Home",
+        href: "/"
+    },
+    {
+        label: "Explore",
+        href: "#explore"
+    },
+    {
+        label: "About",
+        href: "#about"
+    },
+]
 
 const Navbar = () => {
     return (
@@ -17,10 +33,15 @@ const Navbar = () => {
                 className=' w-[100vw] flex items-center justify-between p-[40px]'
             >
                 <Link href={"/"} className='text-2xl'>GenMedia</Link>
-                <div className='hidden md:flex items-center justify-between gap-5'>
-                    <Link href={"/"} className='text-lg font-light tracking-wide uppercase'>Home</Link>
+                <div className='hidden md:flex items-center justify-between gap-8'>
+                    {
+                        NavLinks.map(({ href, label }) => (
+                            <Link key={href} href={href} className='text-lg font-light tracking-wide uppercase'>{label}</Link>
+                        ))
+                    }
+                    {/* <Link href={"/"} className='text-lg font-light tracking-wide uppercase'>Home</Link>
                     <Link href={"#explore"} className='text-lg font-light tracking-wide uppercase'>Explore</Link>
-                    <Link href={"#about"} className='text-lg font-light tracking-wide uppercase'>About Us</Link>
+                    <Link href={"#about"} className='text-lg font-light tracking-wide uppercase'>About Us</Link> */}
                 </div>
                 <div className='hidden md:flex items-center justify-center gap-5'>
                     <Link href={"/"}>
@@ -34,7 +55,8 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className='md:hidden'>
-                    <AlignRight size={40} />
+                    {/* <AlignRight size={40} /> */}
+                    <MobileNav />
                 </div>
             </motion.nav>
         </div >
