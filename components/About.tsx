@@ -8,7 +8,7 @@ import { TitleText, TypingText } from './CustomText';
 
 const About = () => {
     return (
-        <div id='about' className='max-w-7xl flex items-center justify-center mx-auto min-h-screen gap-40'>
+        <div id='about' className='max-w-7xl flex flex-col-reverse md:flex-row  items-center justify-center mx-auto min-h-screen gap-5 md:gap-40'>
             <motion.div
                 variants={fadeIn("right", "tween", 0.5, 0.5)}
                 initial="hidden"
@@ -27,7 +27,7 @@ const About = () => {
                     variants={fadeIn("left", "tween", 1.2, 1)}
                     initial="hidden"
                     whileInView="show"
-                    className='max-w-xl text-[24px]'>
+                    className='max-w-xl md:text-[24px] text-[18px]'>
                     Welcome to GenMedia, where we harness the limitless potential of artificial intelligence to<br /> revolutionize image and video generation.
                     <br />
                     <br />

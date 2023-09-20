@@ -9,17 +9,17 @@ import { TypingText } from './CustomText'
 const Hero = () => {
     return (
         <>
-            <div className='max-w-5xl mx-auto flex flex-col gap-10 mb-5 mt-20'>
+            <div className='max-w-5xl mx-auto flex flex-col gap-10 mb-5 '>
                 <motion.h1
                     variants={fadeIn("up", "spring", 0.5, 2)}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className='text-transparent flex items-center justify-center bg-clip-text bg-gradient-to-b uppercase from-[#FF3BFF] via-[#ECBFBF]  to-[#D94FD5] text-3xl sm:text-4xl md:text-6xl text-center'
+                    className='text-transparent flex items-center justify-center bg-clip-text bg-gradient-to-b uppercase from-[#FF3BFF] via-[#ECBFBF]  to-[#D94FD5] text-3xl sm:text-4xl md:text-6xl text-center md:pt-10'
                 >Unlocking Creative Power</motion.h1>
                 {/* <p className='text-sm text-slate-400 max-w-xl text-center mx-auto'>A premier destination for AI-generated images and videos.
                     Experience the future of media production with GenMedia.</p> */}
-                <TypingText className='text-xsm p-4 md:p-0 border md:text-sm text-slate-400 max-w-xl text-center mx-auto' text='A premier destination for AI-generated images and videos. Experience the future of media production with GenMedia.' />
+                <TypingText className='text-xsm p-4 md:p-0  md:text-sm text-slate-400 max-w-xl text-center mx-auto' text='A premier destination for AI-generated images and videos. Experience the future of media production with GenMedia.' />
                 {/* <span className='text-center mt-2'>
                     <Link href={"/"} className='p-5 rounded-full border border-white '> Get Started</Link>
                 </span> */}
@@ -43,9 +43,9 @@ const Hero = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
-                className='border bottom-0 mt-[150px] md:mt-0'
+                className=' md:mt-[110px]'
             >
-                <Image src={"/hero.png"} className='mx-auto left-0 h-[250px] w-[1700px]' height={2000} width={2000} alt='Hero Image' priority />
+                <Image src={"/hero.png"} className='mx-auto left-0 h-[250px] md:h-[400px] w-[1700px]' height={2000} width={2000} alt='Hero Image' priority />
             </motion.div>
         </>
     )
