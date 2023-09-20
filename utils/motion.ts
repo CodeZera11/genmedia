@@ -1,5 +1,3 @@
-import { easeOut } from "framer-motion";
-
 export const navVariants = {
   hidden: {
     opacity: 0,

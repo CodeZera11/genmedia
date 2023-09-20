@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
 .container {
   height: 40px;
   width: 140px;

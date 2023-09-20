@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ backgroundImage: "/bg.png" }} className={`${montserrat.className} bg-black text-white`}>{children}</body>
+      <body className={`${montserrat.className} mx-auto bg-black text-white`}>
+        {children}
+      </body>
     </html>
   )
 }
