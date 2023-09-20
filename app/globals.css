@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  height: 40px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: linear-gradient(
+    45deg,
+    #ff3bff 0%,
+    #ecbfbf 15%,
+    #d94fd5 30%,
+    #5c24ff 100%
+  );
+}
+.box {
+  height: 120%;
+  width: 130%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
